@@ -1,0 +1,51 @@
+.container {
+  width: 1280px;
+}
+.back {
+  background-image: url(../img/pic2.jpg);
+  width: 1280px;
+  height: 800px;
+  margin: 0 auto;
+}
+.img1 {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+
+  mix-blend-mode: multiply;
+  margin-top: 500px;
+  margin-left: 700px;
+  animation: catmove 6s infinite;
+  animation-timing-function: linear;
+}
+@keyframes catmove {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 800px;
+  }
+}
+.img2 {
+  position: absolute;
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+  margin-left: 900px;
+  margin-top: -200px;
+  mix-blend-mode: multiply;
+  animation: dogmove 6s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes dogmove {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 1000px;
+  }
+}
